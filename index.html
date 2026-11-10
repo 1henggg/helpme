@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#10243a" />
+  <meta name="description" content="ChainScope — 從供應鏈知識、產業企業網絡到每週產業情報，理解全球供應鏈如何運作與變化。" />
+  <title>ChainScope｜Supply Chain Intelligence</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#home" aria-label="ChainScope 首頁">
+        <span class="brand-mark">C<span>.</span></span>
+        <span><strong>ChainScope</strong><small>SUPPLY CHAIN INTELLIGENCE</small></span>
+      </a>
+      <div class="side-label">WORKSPACE</div>
+      <nav class="side-nav" aria-label="主要導覽">
+        <a href="#home" data-page="home" class="nav-link active"><span class="nav-icon">⌂</span>總覽 Overview</a>
+        <a href="#academy" data-page="academy" class="nav-link"><span class="nav-icon">▤</span>知識與技能 Academy</a>
+        <a href="#industries" data-page="industries" class="nav-link"><span class="nav-icon">◎</span>產業與企業 Map</a>
+        <a href="#intelligence" data-page="intelligence" class="nav-link"><span class="nav-icon">↗</span>每週產業情報</a>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="side-label">ABOUT</div>
+        <a href="#about" data-page="about" class="nav-link"><span class="nav-icon">ⓘ</span>關於 ChainScope</a>
+        <div class="sidebar-note"><span class="pulse"></span><span>Research, connect<br>and understand.</span></div>
+        <div class="sidebar-foot">Independent learning project<br>© 2026 ChainScope</div>
+      </div>
+    </aside>
+
+    <main class="main-area">
+      <header class="topbar">
+        <button class="mobile-menu" id="menuToggle" aria-label="開啟選單">☰</button>
+        <div class="breadcrumb"><span>ChainScope</span><b>/</b><strong id="crumbCurrent">總覽</strong></div>
+        <div class="topbar-right"><span class="status-dot"></span><span>LEARNING & RESEARCH PLATFORM</span><div class="avatar">CS</div></div>
+      </header>
+      <div id="app" class="page-content" aria-live="polite"></div>
+      <footer class="footer"><span>CHAINSCOPE · SUPPLY CHAIN INTELLIGENCE</span><span>Built for curious minds & better decisions.</span></footer>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
